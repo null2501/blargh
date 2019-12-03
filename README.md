@@ -33,7 +33,7 @@ Check demos for more examples.
 
 
 PARAMETERS
-	'id': false, // container ID
+	'id': false, // container id
 	'initial': 1, // initial slide
 	'extended': false, // manage left and right previews
 	'lazy': true, // enable internal lazy load manager
