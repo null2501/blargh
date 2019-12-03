@@ -1,5 +1,5 @@
 # BLARGH
-Yet Another Feather-Like Slider
+Yet Another Feather-Like Slider (5KB-)
 
 
 
