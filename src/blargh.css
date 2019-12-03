@@ -1,0 +1,17 @@
+/* generic blargh styles */
+.blargh-wrapper, .blargh-wrapper-extended {width: 100%;margin:0;padding:0 0;overflow:hidden;display:block;position:relative;}
+.blargh-wrapper-extended {padding: 0 40px;}
+.blargh-container {width: 100.1%;margin:0;padding:0;display:block;position:relative;padding-top: 56.25%;} /* 16:9 aspect - can be overwritten */
+.blargh-wrapper-extended .blargh-container {width: 100%;}
+.blargh-slide {display: none;width:100%;position:absolute;top:0;transform: translateX(0px);z-index:1;}
+.blargh-active, .blargh-prev, .blargh-next, .blargh-noinit .blargh-slide:first-child,.blargh-noinit .blargh-slide:last-child, .blargh-noinit .blargh-slide:nth-child(2) {display: block;}
+.blargh-prev, .blargh-noinit .blargh-container .blargh-slide:last-child {transform: translateX(-100%);}
+.blargh-next, .blargh-noinit .blargh-container .blargh-slide:nth-child(2) {transform: translateX(100%);}
+.blargh-trans .blargh-slide {transition: transform 0.350s;}
+.blargh-active {z-index:2}
+.blargh-prev, .blargh-next {z-index:1;}
+.blargh-nnext {transform: translateX(200%);display: block; z-index:0;}
+.blargh-pprev {transform: translateX(-200%);display: block; z-index:0;}
+.blargh-pager {position: absolute; left: 0; right: 0; bottom:10px; z-index: 3; display: block; text-align: center; pointer-events: none; }
+.blargh-pager span {width: 10px; height: 10px; margin: 0 10px; border-radius: 50%; background: #ccc; pointer-events: all; display: inline-block;}
+.blargh-pager span.blargh-active {background: #44f;}

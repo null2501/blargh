@@ -1,0 +1,56 @@
+
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>BLARGH - Extended Slider</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="../src/blargh.min.css">
+  <style>
+	#slider .blargh-container  {padding-top: 56.25%;} /* ASPECT */
+	#slider .blargh-slide img {width:100%; display:block;}
+  </style>
+
+</head>
+<body>
+
+<h2>Extended Slider</h2>
+<div style="width: 66%">
+	<div class="blargh-wrapper-extended blargh-noinit" id="slider">
+		<div class="blargh-container">
+			<div class="blargh-slide">
+				<a href="/"><img src="img/01.jpg"></a>
+			</div>
+			<div class="blargh-slide">
+				<a href="/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAQAAACRI2S5AAAAEklEQVR42mNkkGTACxhHFYABAJY5AOssMN37AAAAAElFTkSuQmCC" data-msrc="img/02.jpg"></a>
+			</div>
+			<div class="blargh-slide">
+				<a href="/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAQAAACRI2S5AAAAEklEQVR42mNkkGTACxhHFYABAJY5AOssMN37AAAAAElFTkSuQmCC" data-msrc="img/03.jpg"></a>
+			</div>
+			<div class="blargh-slide">
+				<a href="/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAQAAACRI2S5AAAAEklEQVR42mNkkGTACxhHFYABAJY5AOssMN37AAAAAElFTkSuQmCC" data-msrc="img/04.jpg"></a>
+			</div>
+			<div class="blargh-slide">
+				<a href="/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAQAAACRI2S5AAAAEklEQVR42mNkkGTACxhHFYABAJY5AOssMN37AAAAAElFTkSuQmCC" data-msrc="img/05.jpg"></a>
+			</div>
+		</div>
+		<div class="blargh-pager"></div>
+	</div>
+</div>
+<p></p>
+<a href="javascript:" onclick="slider.prev();return false;">PREV</a> - - -
+<a href="javascript:" onclick="slider.next();return false;">NEXT</a> - - -
+<a href="javascript:" onclick="slider.go(3);return false;">GO TO 3</a>
+
+<script src="../src/blargh.min.js"></script>
+<script>
+	var slider = new BLARGH({id: 'slider', extended: true, pager: true, pagerlinks: true});
+	slider.onChange(function(){
+		console.log("CHANGE!", slider.status);
+	});
+</script>
+</body>
+</html>
