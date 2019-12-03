@@ -36,16 +36,16 @@ PARAMETERS
 
 	'id': false, // container id
 	'initial': 1, // initial slide
-	'extended': false, // manage left and right previews
-	'lazy': true, // enable internal lazy load manager
-	'visibility': true, // enable visibility manager
+	'extended': false, // enable to manage left and right previews
+	'lazy': true, // enable to use internal lazy load manager
+	'visibility': true, // enable to use visibility manager
 	'autoplay': false, // false or milliseconds
 	'mouseover': true, // mouseover pauses autoplay
 	'visibilityid': false, // container id used by visibility (false = main container)
 	'mouseoverid': false, // container id used by mouseover (false = main container)
 	'pagerid': false,  // container id used by pager (false = main container)
-	'pager': false, // enable pager dots
-	'pagerlinks': false, // enable clickable pager
+	'pager': false, // enable to manage pager dots
+	'pagerlinks': false, // enable to get clickable pager
 	'preload': true // lazy preload next/prev
 
 
